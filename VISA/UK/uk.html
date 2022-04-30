@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="uk.css">
+    <link rel="stylesheet" href="/VISA/FRANCE/fr.css">
     <title>TourBook</title>
 </head>
 <body>
-    <div class="header-nav">
+    <div class="header-nav print-no-show">
         <a href="/VISA/visa.html"><img class="header-nav" src="/icons/arrow.png" alt="" height="32px" width="32px"></a>
         <a href="/index.html"><img class="header-nav" src="/icons/home.png" alt="" height="32px" width="32px"></a>
     </div>
@@ -20,24 +20,80 @@
             </div>
             <div class="left-content">
                 <ul>
-                    <li><a href="https://visas-immigration.service.gov.uk/alt-language-selection-skip-visa" target="_blank">Formulaire</a></li>
+                    <li class="print-no-show"><a href="https://visas-immigration.service.gov.uk/alt-language-selection-skip-visa" target="_blank">Formulaire</a></li>
                     <li><h3>Documents</h3></li>
-                    <li class="dot-list">Document 1</li>
-                    <li class="dot-list">Document 2</li>
-                    <li class="dot-list">Document 3</li>
+                    <li class="dot-list">Formulaire <span class="price">2000 DA</span></li>
+                    <li class="dot-list">Hébergement/Réservation d'Hotel <span class="price">3000 DA</span></li>
+                    <li class="dot-list">Assurance de Voyage <span class="price">Depend de la durée</span></li>
+                    <li class="dot-list">Telex <span class="price">500 DA</span></li>
+                    <li class="dot-list">Relevé compte bancaire (Euro/Dinar)</li>
+                    <div id="tourist">
+                        <li><h5>Touristique</h5></li>
+                        <li class="dot-list"><span class="client-type">S </span>3 Dernieres fiches de paie</li>
+                        <li class="dot-list"><span class="client-type">S </span>Attestation de travail</li>
+                        <li class="dot-list"><span class="client-type">S </span>Affiliation CNAS (Assurance)</li>
+                        <li class="dot-list"><span class="client-type">C </span>Registre de Commerce</li>
+                        <li class="dot-list"><span class="client-type">C </span>C20</li>
+                        <li class="dot-list"><span class="client-type">C </span>Affiliation CASNOS (Assurance)</li>
+                        <li class="dot-list"><span class="client-type">R </span>Attestation de Retraite</li>
+                    </div>
+                    <div id="affaire">
+                        <li><h5>Affaire</h5></li>
+                        <li class="dot-list">Passport valide de plus de 6 mois</li>
+                        <li class="dot-list">Lettre d'invitation</li>
+                        <li class="dot-list">Ordre de mission</li>
+                        <li class="dot-list">3 Dernieres fiches de paie</li>
+                        <li class="dot-list">Lettre de prise en charge</li>
+                        <li class="dot-list">Historique bancaire de plus de 6 mois</li>
+                    </div>
+                    <div id="medical">
+                        <li><h5>Medical</h5></li>
+                        <li class="dot-list">Passport valide de plus de 3 mois</li>
+                        <li class="dot-list">Historique bancaire des 3 dernier mois</li>
+                        <li class="dot-list">Lettre de prise en charge</li>
+                        <li class="dot-list">Justificatif de moyen financier et d'hebergement</li>
+                        <li class="dot-list">Lettre de reference du docteur</li>
+                    </div>
+                    <div id="etude">
+                        <li><h5>Etude</h5></li>
+                        <li class="dot-list">Lettre d'invitation</li>
+                    </div>
                 </ul>
             </div>
         </div>
         <div class="content right">
-            <h3>Etapes</h3>
+            <div class="print-no-show">
+                <h3>Etapes</h3>
             <ul>
-                <li>Etape 1</li>
-                <li>Etape 2</li>
-                <li>Etape 3</li>
-                <li>Etape 4</li>
-                <li>Etape 5</li>
+                <li class="dot-list">Creer un dossier</li>
+                <li class="dot-list">Prendre un rendez-vous</li>
+                <li class="dot-list">Client paie TLS</li>
             </ul>
+            </div>
+            <div class="frais">
+                <h3>Frais de VISA</h3>
+                <h5 class="price">26,000 DA</h5>
+            </div>
         </div>
     </div>
+    <div class="buttons-container print-no-show">
+        <div class="buttons">
+            <button onclick="touristiqueCall()">Touristique</button>
+            <img id="print1" src="/icons/printer.png" alt="">
+        </div>
+        <div class="buttons">
+            <button onclick="affaireCall()">Affaire</button>
+            <img id="print2" src="/icons/printer.png" alt="">
+        </div>
+        <div class="buttons">
+            <button onclick="medicalCall()">Medicale</button>
+            <img id="print3" src="/icons/printer.png" alt="">
+        </div>
+        <div class="buttons">
+            <button onclick="etudeCall()">Etude</button>
+            <img id="print4" src="/icons/printer.png" alt="">
+        </div>
+    </div>
+    <script src="/VISA/visa.js"></script>
 </body>
 </html>

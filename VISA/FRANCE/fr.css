@@ -132,3 +132,79 @@ a{
     margin: 0 auto;
     margin-left: 10px;
 }
+
+#tourist{
+    display: none;
+}
+
+#tourist.active{
+    display: block;
+}
+
+#affaire{
+    display: none;
+}
+
+#affaire.active{
+    display: block;
+}
+
+#medical{
+    display: none;
+}
+
+#medical.active{
+    display: block;
+}
+
+#etude{
+    display: none;
+}
+
+#etude.active{
+    display: block;
+}
+
+@media print {
+    .print-no-show{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .left{
+        border: none;
+    }
+
+    .content{
+        margin: 0;
+        width: 100%;
+    }
+
+    .left-content{
+        width: 100%;
+    }
+
+    .left-content ul{
+        width: 100%;
+    }
+
+    .left-content li{
+        width: 100%;
+    }
+
+    .dot-list{
+        width: 100%;
+    }
+}
